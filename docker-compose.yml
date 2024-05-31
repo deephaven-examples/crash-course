@@ -6,7 +6,7 @@ services:
     volumes:
       - ./data:/data
     environment:
-      - START_OPTS=-Xmx4g
+      - START_OPTS=-Xmx4g -Dauthentication.psk=Cr@shC0urse
 
   examples:
     image: ghcr.io/deephaven/examples:${VERSION:-latest}
